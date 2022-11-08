@@ -3,6 +3,7 @@
     padding:0;
     font-family: sans-serif;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .hero{
@@ -192,9 +193,15 @@ span{
 
 
 
+.frontend{
+    display: none;
+}
+
+
 @media only screen and (max-width:600px){
 
   body{
+    
     overflow-x: hidden;
   }
 
@@ -213,8 +220,40 @@ span{
     }
 
      .hero{
-        background-color: black;
+      background-image: url('wall.png');
+      background-repeat: no;
+      background-size: cover;
+      
      }
+
+
+    .frontend{
+        display: block;
+        color:grey;
+        float:right;
+        margin-right: 4%;
+        margin-top: 8%;
+        font-size: large;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        opacity:50%;
+
+    }
+
+
+    .frontend:hover{
+        transform: translateX(-3%);
+        transition-property: bottom 1s, left 1s;
+        transition-duration: 350ms;
+        color:rgb(19, 169, 119);
+    }
+
+
+
+
+
+
+
+
 
    .details{
     margin-top: 20%;
@@ -249,6 +288,30 @@ span{
     box-shadow: 0 0 7px   rgba(85, 255, 0, 0.611) ;
     
 }
+
+.fb{
+    color:rgb(91, 87, 91);
+  }
+  .twt{
+      color:rgb(81, 80, 81);
+  }
+  
+  
+  .inst{
+      color:rgb(69, 68, 69);
+  }
+  
+  .lnkd{
+      color:rgb(86, 85, 86);
+  }
+  
+
+
+
+
+
+
+
 
 
 }
